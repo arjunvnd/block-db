@@ -1,5 +1,5 @@
 const express = require('express')
-// var cors = require('cors')
+var cors = require('cors')
 const path = require('path')
 const bodyParser = require('body-parser');
 const Web3 = require('web3');
@@ -8,7 +8,7 @@ const api = require('./routes/api');
 const PORT = require('./config/properties').PORT;
 const database = require('./config/database');
 const app = express();
-// app.use(cors())
+app.use(cors())
 
 
 
