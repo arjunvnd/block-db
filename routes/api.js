@@ -63,7 +63,7 @@ router.post("/getBlock",async (req,res)=>{
 
     
     // res.send(JSON.stringify(tranaction))
-    res.send("Success")
+    res.send({message:'Success'})
 
 })
 
